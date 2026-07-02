@@ -38,7 +38,7 @@ const projects = [
     desc: "Minimal personal portfolio design",
     image: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
     demo: "https://your-demo-link.com",
-    github: "https://github.com/sharlene003/blas-portfolio2026",
+    github: "https://github.com/sharlene003/blas-portfolio",
     redirect: "/projects/portfolio-website",
   },
 ];
