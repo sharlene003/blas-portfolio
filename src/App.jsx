@@ -6,22 +6,29 @@ import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Reveal from "./components/Reveal";
-import  ProjectsPage  from "./pages/Projects";
-import  Gallery  from "./pages/Gallery";
+import ProjectsPage from "./pages/Projects";
+import Gallery from "./pages/Gallery";
 import BackToTopButton from "./components/reusables/back";
 import { Routes, Route } from "react-router-dom";
 import CV from "./pages/Cv";
+import { useLocation } from "react-router-dom";
+
 export default function App() {
   const [dark, setDark] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
 
   return (
-    <div className={dark ? "dark bg-slate-900 text-white" : "bg-white text-slate-900"}>
+    <div
+      className={
+        dark ? "dark bg-slate-900 text-white" : "bg-white text-slate-900"
+      }
+    >
       <Navbar dark={dark} setDark={setDark} />
-      <BackToTopButton />
+      {location.pathname !== "/" && <BackToTopButton />}
       <Routes>
         <Route
           path="/"
@@ -47,19 +54,11 @@ export default function App() {
             </>
           }
         />
-<Route path="/cv" element={<CV />} />
-        <Route
-          path="/projects/:projectId"
-          element={<ProjectsPage />}
-        />
-     
-      <Route
-          path="/projects/:type/:title"
-          element={<Gallery />}
-        />
-      </Routes>
+        <Route path="/cv" element={<CV />} />
+        <Route path="/projects/:projectId" element={<ProjectsPage />} />
 
-      
+        <Route path="/projects/:type/:title" element={<Gallery />} />
+      </Routes>
     </div>
   );
 }

@@ -6,7 +6,7 @@ const projects = [
     desc: "Modern shopping experience built with React.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
     demo: "#",
-    github: "#",
+    github: "",
     redirect: "/projects/e-commerce",
   },
   {
@@ -14,7 +14,7 @@ const projects = [
     desc: "Clean admin dashboard with reusable components",
     image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952",
     demo: "https://your-demo-link.com",
-    github: "https://github.com/your-repo",
+    github: "",
     redirect: "/projects/enterprise",
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     desc: "Clean admin dashboard with reusable components",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
     demo: "https://your-demo-link.com",
-    github: "https://github.com/your-repo",
+    github: "",
     redirect: "/projects/content-management-system",
   },
   {
@@ -30,16 +30,17 @@ const projects = [
     desc: "Clean admin dashboard with reusable components",
     image: "https://images.unsplash.com/photo-1511512578047-dfb367046420",
     demo: "https://your-demo-link.com",
-    github: "https://github.com/your-repo",
+    github: "",
     redirect: "/projects/gaming-and-entertainment",
   },
-  // {
-  //   title: "Portfolio Website",
-  //   desc: "Minimal personal portfolio design",
-  //   demo: "https://your-demo-link.com",
-  //   github: "https://github.com/your-repo",
-  //   redirect: "/projects/portfolio-website",
-  // },
+  {
+    title: "Portfolio",
+    desc: "Minimal personal portfolio design",
+    image: "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
+    demo: "https://your-demo-link.com",
+    github: "https://github.com/sharlene003/blas-portfolio2026",
+    redirect: "/projects/portfolio-website",
+  },
 ];
 
 export default function Projects() {
@@ -108,19 +109,21 @@ export default function Projects() {
                   Go to Project
                 </a>
 
-                {/* <a
-                  href={project.github}
-                  className="
-              px-4 py-2 rounded-full
-              border border-slate-300
-              text-sm text-slate-700
-              hover:border-violet-400
-              hover:text-violet-600
-              transition
-            "
-                >
-                  GitHub
-                </a> */}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    className="
+      px-4 py-2 rounded-full
+      border border-slate-300
+      text-sm text-slate-700
+      hover:border-violet-400
+      hover:text-violet-600
+      transition
+    "
+                  >
+                    GitHub
+                  </a>
+                )}
               </div>
             </div>
           </div>

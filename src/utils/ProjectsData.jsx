@@ -35,7 +35,7 @@ import snrUI2 from "../assets/snr/snr-ui2.png";
 import yonduLogo from "../assets/yondu/yondu-logo.jpeg";
 import yonduUI from "../assets/yondu/yondu-ui.png";
 
-
+import profileUI from "../assets/profile/profile-ui.png";
 const ProjectsData = {
   "e-commerce": [
     {
@@ -191,15 +191,21 @@ const ProjectsData = {
       galleryId: "1",
     },
   ],
-  // "portfolio-website": [
-  //   {
-  //     id: 1,
-  //     title: "Landing Page",
-  //     image: "",
-  //     description: "",
-  //     galleryId: "1",
-  //   },
-  // ],
+  "portfolio-website": [
+    {
+      id: 1,
+      title: "ReactJS Portfolio",
+      preview: profileUI,
+      image: [
+        {
+          id: 1,
+          src: profileUI,
+        },
+      ],
+      description: "",
+      galleryId: "1",
+    },
+  ],
 };
 
 export default ProjectsData;

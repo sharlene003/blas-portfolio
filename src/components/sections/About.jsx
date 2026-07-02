@@ -1,4 +1,4 @@
-const skills = ["VueJS", "NuxtJS", "ReactJS", "JavaScript","Vite"];
+const skills = ["VueJS", "NuxtJS", "ReactJS", "JavaScript", "Vite"];
 import { useNavigate } from "react-router-dom";
 
 export default function About() {
@@ -30,11 +30,12 @@ export default function About() {
         >
           View My Profile
         </button> */}
-        <button onClick={() => navigate("/cv")}
+        <button
+          onClick={() => navigate("/cv")}
           className="mt-6 px-6 py-2 bg-violet-600 text-white rounded-full hover:bg-violet-700 transition"
-          >
-  View CV
-</button>
+        >
+          View CV
+        </button>
         {/* Skills */}
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {skills.map((skill) => (
