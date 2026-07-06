@@ -9,16 +9,14 @@ import { useParams } from "react-router-dom";
 function ProjectsPage() {
   const navigate = useNavigate();
   const { projectId } = useParams();
-  
- 
 
   return (
     <div className="projects-container">
       <h2 className="text-3xl font-semibold bg-gradient-to-r from-violet-600 to-blue-500 text-transparent bg-clip-text">
         {ProjectData[projectId]?.title}
       </h2>
-      {/* <div class="grid grid-cols-4 gap-4"></div> */}
-      <div className="grid grid-cols-4 gap-4">
+
+      <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
         {ProjectData[projectId]?.map((project) => (
           <div
             key={project.id}
@@ -26,8 +24,6 @@ function ProjectsPage() {
             onClick={() => navigate(`/projects/${projectId}/${project.title}`)}
           >
             <img src={project.preview} alt={project.title} />
-            {/* <h3>{project.title} </h3>
-            <p>{project.description}</p> */}
           </div>
         ))}
       </div>
