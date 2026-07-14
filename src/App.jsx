@@ -11,8 +11,9 @@ import Gallery from "./pages/Gallery";
 import BackToTopButton from "./components/reusables/back";
 import { Routes, Route } from "react-router-dom";
 import CV from "./pages/Cv";
+import CertificationCard from "./pages/Certification";
 import { useLocation } from "react-router-dom";
-
+import Footer from "./components/layout/Footer";
 export default function App() {
   const [dark, setDark] = useState(false);
   const location = useLocation();
@@ -50,7 +51,7 @@ export default function App() {
                 <Contact />
               </Reveal>
 
-              <Skills />
+              {/* <Skills /> */}
             </>
           }
         />
@@ -58,7 +59,9 @@ export default function App() {
         <Route path="/projects/:projectId" element={<ProjectsPage />} />
 
         <Route path="/projects/:type/:title" element={<Gallery />} />
+        <Route path="/certifications" element={<CertificationCard />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

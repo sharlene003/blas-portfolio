@@ -14,9 +14,10 @@ export default function Navbar({ dark, setDark }) {
         <div className="flex items-center gap-2">
 
           <div className="flex gap-2 text-sm">
-            <a href="#about" className="hover:text-violet-500">About</a>
-            <a href="#projects" className="hover:text-violet-500">Projects</a>
-            <a href="#contact" className="hover:text-violet-500">Contact</a>
+            <a href="/#about" className="hover:text-violet-500">About</a>
+            <a href="/#projects" className="hover:text-violet-500">Projects</a>
+            <a href="/#contact" className="hover:text-violet-500">Contact</a>
+            <a href="certifications" className="hover:text-violet-500">Certifications</a>
           </div>
 
           {/* Dark mode button */}
