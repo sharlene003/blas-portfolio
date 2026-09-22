@@ -1,5 +1,5 @@
 import CertificationCard from "../components/certificate/card";
-import certifications from "../utils/Certification";
+import certifications from "../utils/Certification.jsx";
 
 export default function Certifications() {
   return (

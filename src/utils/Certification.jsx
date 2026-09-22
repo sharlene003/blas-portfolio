@@ -39,7 +39,6 @@ const certifications = [
     credential: "#",
     skills: ["GCP", "Cloud"],
   },
-  
 ];
 
 export default certifications;
