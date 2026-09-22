@@ -7,7 +7,7 @@ export default function About() {
     navigate("/user/1");
   };
   return (
-    <section id="about" className="max-w-5xl mx-auto px-6 py-24">
+    <section id="about" className="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
       {/* Heading */}
       <div className="text-center">
         <h2 className="text-3xl font-semibold bg-gradient-to-r from-violet-600 to-blue-500 text-transparent bg-clip-text">
@@ -18,8 +18,8 @@ export default function About() {
       </div>
 
       {/* Content Card */}
-      <div className="mt-12 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition duration-300">
-        <p className="text-slate-600 leading-7 text-center">
+      <div className="mt-8 sm:mt-12 bg-white border border-slate-200 rounded-2xl p-5 sm:p-8 shadow-sm hover:shadow-md transition duration-300">
+        <p className="text-sm sm:text-base text-slate-600 leading-7 text-center">
           I’m a frontend developer who enjoys building clean, responsive, and
           user-friendly web applications. I focus on writing simple, scalable
           code and creating smooth user experiences.

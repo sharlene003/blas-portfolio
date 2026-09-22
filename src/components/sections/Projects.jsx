@@ -48,7 +48,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="max-w-5xl mx-auto px-6 py-20 animate-fadeUp"
+      className="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 animate-fadeUp"
     >
       <div className="text-center">
         <h2 className="text-3xl font-semibold bg-gradient-to-r from-violet-600 to-blue-500 text-transparent bg-clip-text">
@@ -57,7 +57,7 @@ export default function Projects() {
         <div className="mt-2 w-16 h-1 mx-auto bg-gradient-to-r from-violet-500 to-blue-500 rounded-full" />
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8 mt-12">
+      <div className="grid md:grid-cols-2 gap-5 sm:gap-8 mt-8 sm:mt-12">
         {projects.map((project) => (
           <div
             key={project.title}
@@ -86,15 +86,15 @@ export default function Projects() {
             </div>
 
             {/* Content */}
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-slate-900">
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold text-slate-900">
                 {project.title}
               </h3>
 
               <p className="mt-3 text-slate-500 leading-7">{project.desc}</p>
 
               {/* Links */}
-              <div className="flex gap-4 mt-6">
+              <div className="flex flex-wrap gap-3 sm:gap-4 mt-6">
                 <a
                   onClick={() => navigate(project.redirect)}
                   className="

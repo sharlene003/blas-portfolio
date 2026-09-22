@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative max-w-5xl mx-auto px-6 py-24"
+      className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24"
     >
 
       {/* Background Glow */}
@@ -14,7 +14,7 @@ export default function Contact() {
       <div className="text-center">
 
         <h2 className="
-          text-4xl font-bold
+          text-3xl sm:text-4xl font-bold
           bg-gradient-to-r from-violet-600 via-blue-500 to-indigo-500
           text-transparent bg-clip-text
         ">
@@ -31,12 +31,12 @@ export default function Contact() {
 
       {/* Contact Card */}
       <div className="
-        mt-12
+        mt-8 sm:mt-12
         bg-white/70
         backdrop-blur-xl
         border border-white/30
         rounded-3xl
-        p-10
+        p-5 sm:p-10
         shadow-xl
         flex flex-col md:flex-row
         items-center
@@ -47,8 +47,8 @@ export default function Contact() {
       ">
 
         {/* Left */}
-        <div>
-          <h3 className="text-2xl font-semibold text-slate-900">
+        <div className="w-full md:w-auto text-center md:text-left">
+          <h3 className="text-xl sm:text-2xl font-semibold text-slate-900">
             Get in touch ✨
           </h3>
 
@@ -58,12 +58,12 @@ export default function Contact() {
         </div>
 
         {/* Right */}
-        <div className="flex gap-4">
+        <div className="flex w-full md:w-auto flex-wrap justify-center gap-3 sm:gap-4">
 
           <a
             href="mailto:your@email.com"
             className="
-              px-6 py-3 rounded-full
+              px-5 sm:px-6 py-3 rounded-full
               bg-gradient-to-r from-violet-600 to-blue-500
               text-white font-medium
               hover:opacity-90

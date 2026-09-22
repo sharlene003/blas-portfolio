@@ -11,8 +11,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-slate-950 text-slate-300 border-t border-slate-800">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid gap-10 md:grid-cols-3">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+        <div className="grid gap-8 sm:gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
             <h2 className="text-2xl font-bold text-white">
@@ -109,7 +109,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm">
+        <div className="border-t border-slate-800 mt-8 sm:mt-10 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs sm:text-sm text-center md:text-left">
           <p>
             © {year} Sharlene Blas. All rights reserved.
           </p>
